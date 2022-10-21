@@ -2,7 +2,7 @@
 GLOBALS CLASSES 
 -------------------------------------------------*/
 *{padding:0; margin:0;}
-body{font-family:"Trebuchet MS"; font-size:14px; color:#ffed71; background:url(../images/bg1.png);}
+body{font-family:"Trebuchet MS"; font-size:14px; color:#000000; background:url(../images/bg1.png);}
 img{border:none;}
 h1{ font-family:"Trebuchet MS"; font-size:22px; font-weight:normal;}
 h2{ font-family:"Trebuchet MS"; font-size:18px; font-weight:normal;}
