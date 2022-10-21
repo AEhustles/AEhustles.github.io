@@ -64,7 +64,7 @@ BANNER CLASSES
 BOX CLASSES
 -------------------------------------------------*/
 .box{ width:300px; overflow:hidden; float:left;}
-.box .panel .title{ background:url(../images/line-bg.jpg) repeat-x bottom; padding-bottom:25px; margin-bottom:25px;}
+.box .panel .title{ background:url(../images/line-bg.png) repeat-x bottom; padding-bottom:25px; margin-bottom:25px;}
 .box .panel .title span{ float:left; margin-right:12px;}
 .box .panel .title h1{ color:#ffffff; font-weight:normal;}
 /*-------------------------------------------------
