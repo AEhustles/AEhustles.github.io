@@ -1,7 +1,6 @@
 <div class="container px-5 my-5">
     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-        <div class="mb-3">
-            <label class="form-label" for="job">Job</label>
+        <div class="form-floating mb-3">
             <select class="form-select" id="job" aria-label="Job">
                 <option value="Leaf Raking">Leaf Raking</option>
                 <option value="Snow Shoveling">Snow Shoveling</option>
@@ -10,25 +9,26 @@
                 <option value="Lawn Mowing">Lawn Mowing</option>
                 <option value="Sweeping">Sweeping</option>
             </select>
+            <label for="job">Job</label>
         </div>
-        <div class="mb-3">
-            <label class="form-label" for="address">Address</label>
+        <div class="form-floating mb-3">
             <input class="form-control" id="address" type="text" placeholder="Address" data-sb-validations="required" />
+            <label for="address">Address</label>
             <div class="invalid-feedback" data-sb-feedback="address:required">Address is required.</div>
         </div>
-        <div class="mb-3">
-            <label class="form-label" for="time">Time</label>
+        <div class="form-floating mb-3">
             <input class="form-control" id="time" type="text" placeholder="Time" data-sb-validations="required" />
+            <label for="time">Time</label>
             <div class="invalid-feedback" data-sb-feedback="time:required">Time is required.</div>
         </div>
-        <div class="mb-3">
-            <label class="form-label" for="moreInformation">More Information</label>
+        <div class="form-floating mb-3">
             <textarea class="form-control" id="moreInformation" type="text" placeholder="More Information" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <label for="moreInformation">More Information</label>
             <div class="invalid-feedback" data-sb-feedback="moreInformation:required">More Information is required.</div>
         </div>
         <div class="d-none" id="submitSuccessMessage">
             <div class="text-center mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
+                <div class="fw-bolder">Form submission successful!</div>
             </div>
         </div>
         <div class="d-none" id="submitErrorMessage">
