@@ -1,53 +1,55 @@
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-section#contact .section-heading {
-  color: #fff;
-}
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
-}
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
+<div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="542ecfb7-2ecb-46b5-aa36-6a826d62d4ad">
+        <div class="form-floating mb-3">
+            <select class="form-select" id="job" aria-label="Job">
+                <option value="Leaf Raking">Leaf Raking</option>
+                <option value="Snow Shovel">Snow Shovel</option>
+                <option value="Dog Walking">Dog Walking</option>
+                <option value="Window Washing">Window Washing</option>
+                <option value="Lawn Mowing">Lawn Mowing</option>
+                <option value="Sweeping">Sweeping</option>
+            </select>
+            <label for="job">Job</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+            <label for="emailAddress">Email Address</label>
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="phoneNumber" type="text" placeholder="Phone Number" data-sb-validations="required" />
+            <label for="phoneNumber">Phone Number</label>
+            <div class="invalid-feedback" data-sb-feedback="phoneNumber:required">Phone Number is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="address" type="text" placeholder="Address" data-sb-validations="required" />
+            <label for="address">Address</label>
+            <div class="invalid-feedback" data-sb-feedback="address:required">Address is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="dateTime" type="text" placeholder="Date &amp; Time" data-sb-validations="required" />
+            <label for="dateTime">Date &amp; Time</label>
+            <div class="invalid-feedback" data-sb-feedback="dateTime:required">Date &amp; Time is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="information" type="text" placeholder="Information" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <label for="information">Information</label>
+            <div class="invalid-feedback" data-sb-feedback="information:required">Information is required.</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
