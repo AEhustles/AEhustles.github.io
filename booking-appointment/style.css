@@ -11296,7 +11296,9 @@ html {
 }
 
 body {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  bottom: 30rem;
   overflow-x: hidden;
 }
 
