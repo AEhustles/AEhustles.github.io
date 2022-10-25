@@ -1,9 +1,9 @@
 <div class="container px-5 my-5">
-    <form id="contactForm" data-sb-form-api-token="4fbdab3f-a900-4e9d-9b6b-f1bea9711106">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
         <div class="form-floating mb-3">
             <select class="form-select" id="job" aria-label="Job">
                 <option value="Leaf Raking">Leaf Raking</option>
-                <option value="Snow Shoveling">Snow Shoveling</option>
+                <option value="Shoveling Snow">Shoveling Snow</option>
                 <option value="Dog Walking">Dog Walking</option>
                 <option value="Window Washing">Window Washing</option>
                 <option value="Lawn Mowing">Lawn Mowing</option>
@@ -12,23 +12,30 @@
             <label for="job">Job</label>
         </div>
         <div class="form-floating mb-3">
+            <input class="form-control" id="phoneNumber" type="text" placeholder="Phone Number" data-sb-validations="required" />
+            <label for="phoneNumber">Phone Number</label>
+            <div class="invalid-feedback" data-sb-feedback="phoneNumber:required">Phone Number is required.</div>
+        </div>
+        <div class="form-floating mb-3">
             <input class="form-control" id="address" type="text" placeholder="Address" data-sb-validations="required" />
             <label for="address">Address</label>
             <div class="invalid-feedback" data-sb-feedback="address:required">Address is required.</div>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" id="time" type="text" placeholder="Time" data-sb-validations="required" />
-            <label for="time">Time</label>
-            <div class="invalid-feedback" data-sb-feedback="time:required">Time is required.</div>
+            <input class="form-control" id="email" type="text" placeholder="Email" data-sb-validations="required" />
+            <label for="email">Email</label>
+            <div class="invalid-feedback" data-sb-feedback="email:required">Email is required.</div>
         </div>
         <div class="form-floating mb-3">
-            <textarea class="form-control" id="moreInformation" type="text" placeholder="More Information" style="height: 10rem;" data-sb-validations="required"></textarea>
-            <label for="moreInformation">More Information</label>
-            <div class="invalid-feedback" data-sb-feedback="moreInformation:required">More Information is required.</div>
+            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <label for="message">Message</label>
+            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
         </div>
         <div class="d-none" id="submitSuccessMessage">
             <div class="text-center mb-3">
                 <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
             </div>
         </div>
         <div class="d-none" id="submitErrorMessage">
